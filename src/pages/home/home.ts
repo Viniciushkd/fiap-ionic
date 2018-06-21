@@ -6,9 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  titulo: string;
   constructor(public navCtrl: NavController) {
+    this.titulo = "Gestão de Contatos";
+  }
 
+  getTitulo(): string {
+    return "App: " + this.titulo;
   }
 
 }
